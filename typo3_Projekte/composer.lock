@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c56723bcddeab2c504055d13c3e73c39",
+    "content-hash": "fb142ec33896a95fec06938f4dc69d5f",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -946,6 +946,170 @@
                 "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.15.4"
             },
             "time": "2022-02-21T09:13:59+00:00"
+        },
+        {
+            "name": "friendsoftypo3/extension-builder",
+            "version": "v11.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfTYPO3/extension_builder.git",
+                "reference": "c93df75d2f288775d534b3ede141fd8b45d6d2e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/extension_builder/zipball/c93df75d2f288775d534b3ede141fd8b45d6d2e5",
+                "reference": "c93df75d2f288775d534b3ede141fd8b45d6d2e5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "nikic/php-parser": "^4.10.4",
+                "php": "^7.4 || ^8.0",
+                "typo3/cms-backend": "^11.4",
+                "typo3/cms-core": "^11.4"
+            },
+            "replace": {
+                "typo3-ter/extension-builder": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.18",
+                "roave/security-advisories": "dev-latest",
+                "sebastian/diff": "^3.0",
+                "typo3/cms-frontend": "^11.4",
+                "typo3/cms-install": "^11.4",
+                "typo3/coding-standards": "^0.3.0",
+                "typo3/testing-framework": "^6.11"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "extension_builder",
+                    "app-dir": ".Build",
+                    "ignore-as-root": false,
+                    "web-dir": ".Build/public"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "EBT\\ExtensionBuilder\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Nico de Haen",
+                    "role": "Developer"
+                },
+                {
+                    "name": "extension_builder Development Team",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tool to kickstart and maintain TYPO3 extensions",
+            "homepage": "https://extensions.typo3.org/extension/extension_builder",
+            "keywords": [
+                "extension",
+                "extension_builder",
+                "typo3"
+            ],
+            "support": {
+                "docs": "https://docs.typo3.org/p/friendsoftypo3/extension-builder/main/en-us/",
+                "issues": "https://github.com/FriendsOfTYPO3/extension_builder/issues",
+                "source": "https://github.com/FriendsOfTYPO3/extension_builder"
+            },
+            "time": "2022-12-21T15:24:18+00:00"
+        },
+        {
+            "name": "georgringer/news",
+            "version": "10.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/georgringer/news.git",
+                "reference": "5325ea6a7bf490a9deabdf1f86372ad128a5e205"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/georgringer/news/zipball/5325ea6a7bf490a9deabdf1f86372ad128a5e205",
+                "reference": "5325ea6a7bf490a9deabdf1f86372ad128a5e205",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^10.4 || ^11"
+            },
+            "conflict": {
+                "symfony/finder": "2.7.44 || 2.8.37 || 3.4.7 || 4.0.7"
+            },
+            "replace": {
+                "typo3-ter/news": "self.version"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "typo3/cms-install": "^10.4 || ^11"
+            },
+            "suggest": {
+                "georgringer/news-tagsuggest": "On the fly creation of tag records within a news record",
+                "georgringer/numbered-pagination": "Improved pagination API",
+                "reelworx/rx-shariff": "GDPR compliant social sharing"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "news",
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/public"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GeorgRinger\\News\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Georg Ringer",
+                    "homepage": "https://ringer.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Versatile news system based on Extbase & Fluid and using the latest technologies provided by TYPO3 CMS.",
+            "homepage": "https://extensions.typo3.org/extension/news",
+            "keywords": [
+                "article",
+                "extension",
+                "news",
+                "typo3"
+            ],
+            "support": {
+                "docs": "https://docs.typo3.org/p/georgringer/news/main/en-us/",
+                "issues": "https://github.com/georgringer/news/issues",
+                "source": "https://github.com/georgringer/news"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/GeorgRinger/10",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.amazon.de/hz/wishlist/ls/8F573K08TSDG",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/georgringer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/georgringer",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-11-21T12:32:44+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -5169,6 +5333,58 @@
                 }
             ],
             "time": "2022-11-25T16:04:03+00:00"
+        },
+        {
+            "name": "t3s/content-consent",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/t3solution/content_consent.git",
+                "reference": "f6caef030dc9b49ac7a4909f511fc25663b8b0e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/t3solution/content_consent/zipball/f6caef030dc9b49ac7a4909f511fc25663b8b0e8",
+                "reference": "f6caef030dc9b49ac7a4909f511fc25663b8b0e8",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^11.5"
+            },
+            "replace": {
+                "typo3-ter/content-consent": "self.version"
+            },
+            "require-dev": {
+                "typo3/testing-framework": "^6.9.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "web-dir": ".Build/public",
+                    "extension-key": "content_consent"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "T3S\\ContentConsent\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Helmut Hackbarth",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides a content consent plugin to load any content elements and custom plugins by ajax without jQuery! So you can include Google Maps or YouTube videos GDPR/DSGVO compliant. Best used with Bootstrap 5",
+            "support": {
+                "issues": "https://github.com/t3solution/content_consent/issues",
+                "source": "https://github.com/t3solution/content_consent/tree/v1.0.2"
+            },
+            "time": "2022-11-12T10:29:37+00:00"
         },
         {
             "name": "typo3/class-alias-loader",

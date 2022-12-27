@@ -14,7 +14,10 @@
 	},
 	"require": {
 		"bk2k/bootstrap-package": "^13.0",
+		"friendsoftypo3/extension-builder": "^11.0",
+		"georgringer/news": "^10.0",
 		"helhum/typo3-console": "^7.0.2",
+		"t3s/content-consent": "^1.0",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",
 		"typo3/cms-beuser": "^11.5.0",
@@ -47,5 +50,11 @@
 		"post-autoload-dump": [
 			"@typo3-cms-scripts"
 		]
+	},
+	"repositories": {
+		"local": {
+			"type": "path",
+			"url": "packages/*"
+		}
 	}
 }

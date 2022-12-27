@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:ews/Resources/Private/Language/locallang.xlf" date="2022-12-23T13:04:51Z" product-name="ews">
+		<header/>
+		<body>
+			<trans-unit id="tx_ews_domain_model_hallo" resname="tx_ews_domain_model_hallo">
+				<source>Hallo</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

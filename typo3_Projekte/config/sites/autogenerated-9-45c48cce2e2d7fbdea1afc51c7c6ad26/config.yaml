@@ -1,4 +1,4 @@
-base: /typo3-lernen
+base: 'https://typo3start.ddev.site/'
 languages:
   -
     title: English
@@ -12,7 +12,6 @@ languages:
     hreflang: en-us
     direction: ltr
     flag: us
-    websiteTitle: ''
   -
     title: Deutsch
     enabled: true
@@ -20,7 +19,7 @@ languages:
     typo3Language: de
     locale: de_DE.utf8
     iso-639-1: de
-    websiteTitle: 'Typo3 11 Basis - DE'
+    websiteTitle: ''
     navigationTitle: Deutsch
     hreflang: de_DE.utf8
     direction: rtl
@@ -28,5 +27,5 @@ languages:
     fallbacks: ''
     flag: de
     languageId: 1
-rootPageId: 1
-websiteTitle: 'Typo3 11 Basics - EN'
+rootPageId: 9
+websiteTitle: ''
