@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:myfirstgame/Resources/Private/Language/locallang_csh_tx_myfirstgame_domain_model_player.xlf" date="2022-12-30T16:44:14Z" product-name="myfirstgame">
+		<header/>
+		<body>
+			<trans-unit id="name.description" resname="name.description">
+				<source>name</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
