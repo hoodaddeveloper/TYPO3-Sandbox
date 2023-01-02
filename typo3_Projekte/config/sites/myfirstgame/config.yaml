@@ -1,0 +1,17 @@
+base: 'https://typo3start.ddev.site/myfirstgame/'
+languages:
+  -
+    title: English
+    enabled: true
+    base: /
+    typo3Language: default
+    locale: en_US.UTF-8
+    iso-639-1: en
+    websiteTitle: ''
+    navigationTitle: English
+    hreflang: en-us
+    direction: ltr
+    flag: us
+    languageId: 0
+rootPageId: 19
+websiteTitle: 'My First Game'

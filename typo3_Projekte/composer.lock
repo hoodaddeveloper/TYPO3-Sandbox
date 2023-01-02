@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb142ec33896a95fec06938f4dc69d5f",
+    "content-hash": "f4b0bfd0ea295807a841b2477e0a0414",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1603,6 +1603,59 @@
                 }
             ],
             "time": "2022-12-20T16:16:38+00:00"
+        },
+        {
+            "name": "hoodad/myfirstgame",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/myfirstgame",
+                "reference": "89879545e0e64ff3f8db0e2de47620b7e5ca3bf1"
+            },
+            "require": {
+                "typo3/cms-core": "^11.5"
+            },
+            "replace": {
+                "typo3-ter/myfirstgame": "self.version"
+            },
+            "require-dev": {
+                "typo3/testing-framework": "^6.9.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "web-dir": ".Build/public",
+                    "extension-key": "myfirstgame"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hoodad\\Myfirstgame\\": "Classes"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Hoodad\\Myfirstgame\\Tests\\": "Tests"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "hoodad",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is a game",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lolli42/finediff",
@@ -7373,7 +7426,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "hoodad/myfirstgame": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

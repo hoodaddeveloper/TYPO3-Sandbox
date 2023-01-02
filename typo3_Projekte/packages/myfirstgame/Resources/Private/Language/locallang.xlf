@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:myfirstgame/Resources/Private/Language/locallang.xlf" date="2023-01-02T08:41:57Z" product-name="myfirstgame">
+	<file source-language="en" datatype="plaintext" original="EXT:myfirstgame/Resources/Private/Language/locallang.xlf" date="2023-01-02T09:31:24Z" product-name="myfirstgame">
 		<header/>
 		<body>
 			<trans-unit id="tx_myfirstgame_domain_model_highscore" resname="tx_myfirstgame_domain_model_highscore">

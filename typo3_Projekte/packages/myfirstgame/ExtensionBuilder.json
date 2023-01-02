@@ -111,9 +111,9 @@
             "version": "1.0.0"
         },
         "extensionKey": "myfirstgame",
-        "name": "my First Game",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "name": "My First Game",
+        "originalExtensionKey": "myfirstgame",
+        "originalVendorName": "Hoodad",
         "persons": [
             {
                 "company": "EWS",
@@ -151,7 +151,7 @@
     ],
     "storagePath": "\/var\/www\/html\/packages\/",
     "log": {
-        "last_modified": "2023-01-02 08:42",
+        "last_modified": "2023-01-02 09:31",
         "extension_builder_version": "v11.0.9",
         "be_user": " (1)"
     }

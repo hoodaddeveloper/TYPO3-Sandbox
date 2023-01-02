@@ -1,7 +1,7 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'my First Game',
+    'title' => 'My First Game',
     'description' => '',
     'category' => 'plugin',
     'author' => 'hoodad',
