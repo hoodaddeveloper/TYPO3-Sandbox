@@ -1,0 +1,15 @@
+{
+  "name":"hoodad/test-package",
+  "type": "typo3-cms-extension",
+  "discription": "my manuel package",
+  "require": {
+    "typo3/cms-core": "^11.5",
+    "typo3/cms-rte-ckeditor": "^11.5",
+    "typo3/cms-fluid-styled-content": "^11.5"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "testpackage"
+    }
+  }
+}

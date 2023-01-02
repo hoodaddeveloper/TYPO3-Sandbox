@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f4b0bfd0ea295807a841b2477e0a0414",
+    "content-hash": "96c8fdb862f18b0321d757410700b8f4",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1653,6 +1653,29 @@
                 }
             ],
             "description": "This is a game",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "hoodad/test-package",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/test-package",
+                "reference": "4fe8efc05b241df75d99a10ddbd86676cc517370"
+            },
+            "require": {
+                "typo3/cms-core": "^11.5",
+                "typo3/cms-fluid-styled-content": "^11.5",
+                "typo3/cms-rte-ckeditor": "^11.5"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "testpackage"
+                }
+            },
             "transport-options": {
                 "relative": true
             }
@@ -7427,7 +7450,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "hoodad/myfirstgame": 20
+        "hoodad/myfirstgame": 20,
+        "hoodad/test-package": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
