@@ -1,0 +1,2 @@
+@import "EXT:fluid_styled_content/Configuration/typoScript/setup.typoscript"
+@import "EXT:site_packa/Configuration/typoScript/setup/*.typoscript"
