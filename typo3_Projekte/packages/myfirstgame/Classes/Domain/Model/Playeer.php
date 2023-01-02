@@ -15,9 +15,9 @@ namespace Hoodad\Myfirstgame\Domain\Model;
  */
 
 /**
- * Highscore
+ * Playeer
  */
-class Highscore extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
+class Playeer extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
 
     /**
@@ -26,13 +26,6 @@ class Highscore extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var string
      */
     protected $title = '';
-
-    /**
-     * highscore
-     *
-     * @var \Hoodad\Myfirstgame\Domain\Model\Playeer
-     */
-    protected $highscore = null;
 
     /**
      * Returns the title
@@ -53,26 +46,5 @@ class Highscore extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setTitle(string $title)
     {
         $this->title = $title;
-    }
-
-    /**
-     * Returns the highscore
-     *
-     * @return \Hoodad\Myfirstgame\Domain\Model\Playeer
-     */
-    public function getHighscore()
-    {
-        return $this->highscore;
-    }
-
-    /**
-     * Sets the highscore
-     *
-     * @param \Hoodad\Myfirstgame\Domain\Model\Playeer $highscore
-     * @return void
-     */
-    public function setHighscore(\Hoodad\Myfirstgame\Domain\Model\Playeer $highscore)
-    {
-        $this->highscore = $highscore;
     }
 }

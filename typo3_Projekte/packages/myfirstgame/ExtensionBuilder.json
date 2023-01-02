@@ -3,19 +3,19 @@
         {
             "config": {
                 "position": [
-                    693,
-                    64
+                    224,
+                    114
                 ]
             },
             "name": "New Model Object",
             "value": {
                 "actionGroup": {
                     "_default0_index": false,
-                    "_default1_list": true,
+                    "_default1_list": false,
                     "_default2_show": false,
-                    "_default3_new_create": true,
-                    "_default4_edit_update": true,
-                    "_default5_delete": true,
+                    "_default3_new_create": false,
+                    "_default4_edit_update": false,
+                    "_default5_delete": false,
                     "customActions": []
                 },
                 "name": "Highscore",
@@ -30,10 +30,23 @@
                     "parentClass": "",
                     "sorting": false,
                     "type": "Entity",
-                    "uid": "1636617657708"
+                    "uid": "742494715781"
                 },
                 "propertyGroup": {
-                    "properties": []
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "813798965305"
+                        }
+                    ]
                 },
                 "relationGroup": {
                     "relations": [
@@ -42,11 +55,11 @@
                             "lazyLoading": false,
                             "propertyIsExcludeField": true,
                             "relationDescription": "",
-                            "relationName": "player",
-                            "relationType": "manyToOne",
+                            "relationName": "highscore",
+                            "relationType": "zeroToOne",
                             "relationWire": "[wired]",
                             "renderType": "selectSingle",
-                            "uid": "1547569843930"
+                            "uid": "882888211740"
                         }
                     ]
                 }
@@ -55,8 +68,8 @@
         {
             "config": {
                 "position": [
-                    199,
-                    74
+                    671,
+                    183
                 ]
             },
             "name": "New Model Object",
@@ -70,7 +83,7 @@
                     "_default5_delete": false,
                     "customActions": []
                 },
-                "name": "Player",
+                "name": "Playeer",
                 "objectsettings": {
                     "addDeletedField": true,
                     "addHiddenField": true,
@@ -82,10 +95,23 @@
                     "parentClass": "",
                     "sorting": false,
                     "type": "Entity",
-                    "uid": "165033502050"
+                    "uid": "1309427550732"
                 },
                 "propertyGroup": {
-                    "properties": []
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "24902212884"
+                        }
+                    ]
                 },
                 "relationGroup": {
                     "relations": []
@@ -140,18 +166,18 @@
             "src": {
                 "moduleId": 0,
                 "terminal": "relationWire_0",
-                "uid": "1547569843930"
+                "uid": "882888211740"
             },
             "tgt": {
                 "moduleId": 1,
                 "terminal": "SOURCES",
-                "uid": "165033502050"
+                "uid": "1309427550732"
             }
         }
     ],
     "storagePath": "\/var\/www\/html\/packages\/",
     "log": {
-        "last_modified": "2023-01-02 10:59",
+        "last_modified": "2023-01-02 11:22",
         "extension_builder_version": "v11.0.9",
         "be_user": " (1)"
     }

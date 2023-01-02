@@ -6,7 +6,7 @@ namespace Hoodad\Myfirstgame\Domain\Repository;
 
 
 /**
- * This file is part of the "my First Game" Extension for TYPO3 CMS.
+ * This file is part of the "My First Game" Extension for TYPO3 CMS.
  *
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.

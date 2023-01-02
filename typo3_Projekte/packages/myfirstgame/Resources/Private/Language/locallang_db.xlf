@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:myfirstgame/Resources/Private/Language/locallang_db.xlf" date="2023-01-02T10:59:05Z" product-name="myfirstgame">
+	<file source-language="en" datatype="plaintext" original="EXT:myfirstgame/Resources/Private/Language/locallang_db.xlf" date="2023-01-02T11:22:41Z" product-name="myfirstgame">
 		<header/>
 		<body>
 			<trans-unit id="tx_myfirstgame_domain_model_highscore" resname="tx_myfirstgame_domain_model_highscore">
 				<source>Highscore</source>
 			</trans-unit>
-			<trans-unit id="tx_myfirstgame_domain_model_highscore.player" resname="tx_myfirstgame_domain_model_highscore.player">
-				<source>Player</source>
+			<trans-unit id="tx_myfirstgame_domain_model_highscore.title" resname="tx_myfirstgame_domain_model_highscore.title">
+				<source>Title</source>
 			</trans-unit>
-			<trans-unit id="tx_myfirstgame_domain_model_player" resname="tx_myfirstgame_domain_model_player">
-				<source>Player</source>
+			<trans-unit id="tx_myfirstgame_domain_model_highscore.highscore" resname="tx_myfirstgame_domain_model_highscore.highscore">
+				<source>Highscore</source>
+			</trans-unit>
+			<trans-unit id="tx_myfirstgame_domain_model_playeer" resname="tx_myfirstgame_domain_model_playeer">
+				<source>Playeer</source>
+			</trans-unit>
+			<trans-unit id="tx_myfirstgame_domain_model_playeer.title" resname="tx_myfirstgame_domain_model_playeer.title">
+				<source>Title</source>
 			</trans-unit>
 			<trans-unit id="tx_myfirstgame_highscore.name" resname="tx_myfirstgame_highscore.name">
 				<source>Highscore</source>

@@ -13,10 +13,10 @@ use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
  *
  * @author hoodad <hoodad94@gmail.com>
  */
-class HighscoreTest extends UnitTestCase
+class PlayeerTest extends UnitTestCase
 {
     /**
-     * @var \Hoodad\Myfirstgame\Domain\Model\Highscore|MockObject|AccessibleObjectInterface
+     * @var \Hoodad\Myfirstgame\Domain\Model\Playeer|MockObject|AccessibleObjectInterface
      */
     protected $subject;
 
@@ -25,7 +25,7 @@ class HighscoreTest extends UnitTestCase
         parent::setUp();
 
         $this->subject = $this->getAccessibleMock(
-            \Hoodad\Myfirstgame\Domain\Model\Highscore::class,
+            \Hoodad\Myfirstgame\Domain\Model\Playeer::class,
             ['dummy']
         );
     }
@@ -54,27 +54,5 @@ class HighscoreTest extends UnitTestCase
         $this->subject->setTitle('Conceived at T3CON10');
 
         self::assertEquals('Conceived at T3CON10', $this->subject->_get('title'));
-    }
-
-    /**
-     * @test
-     */
-    public function getHighscoreReturnsInitialValueForPlayeer(): void
-    {
-        self::assertEquals(
-            null,
-            $this->subject->getHighscore()
-        );
-    }
-
-    /**
-     * @test
-     */
-    public function setHighscoreForPlayeerSetsHighscore(): void
-    {
-        $highscoreFixture = new \Hoodad\Myfirstgame\Domain\Model\Playeer();
-        $this->subject->setHighscore($highscoreFixture);
-
-        self::assertEquals($highscoreFixture, $this->subject->_get('highscore'));
     }
 }

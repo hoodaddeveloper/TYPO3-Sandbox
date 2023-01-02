@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:myfirstgame/Resources/Private/Language/locallang_db.xlf:tx_myfirstgame_domain_model_highscore',
+        'title' => 'LLL:EXT:myfirstgame/Resources/Private/Language/locallang_db.xlf:tx_myfirstgame_domain_model_playeer',
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -17,10 +17,10 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'title',
-        'iconfile' => 'EXT:myfirstgame/Resources/Public/Icons/tx_myfirstgame_domain_model_highscore.gif'
+        'iconfile' => 'EXT:myfirstgame/Resources/Public/Icons/tx_myfirstgame_domain_model_playeer.gif'
     ],
     'types' => [
-        '1' => ['showitem' => 'title, highscore, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
+        '1' => ['showitem' => 'title, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -40,8 +40,8 @@ return [
                 'items' => [
                     ['', 0],
                 ],
-                'foreign_table' => 'tx_myfirstgame_domain_model_highscore',
-                'foreign_table_where' => 'AND {#tx_myfirstgame_domain_model_highscore}.{#pid}=###CURRENT_PID### AND {#tx_myfirstgame_domain_model_highscore}.{#sys_language_uid} IN (-1,0)',
+                'foreign_table' => 'tx_myfirstgame_domain_model_playeer',
+                'foreign_table_where' => 'AND {#tx_myfirstgame_domain_model_playeer}.{#pid}=###CURRENT_PID### AND {#tx_myfirstgame_domain_model_playeer}.{#sys_language_uid} IN (-1,0)',
             ],
         ],
         'l10n_diffsource' => [
@@ -96,26 +96,13 @@ return [
 
         'title' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:myfirstgame/Resources/Private/Language/locallang_db.xlf:tx_myfirstgame_domain_model_highscore.title',
+            'label' => 'LLL:EXT:myfirstgame/Resources/Private/Language/locallang_db.xlf:tx_myfirstgame_domain_model_playeer.title',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim',
                 'default' => ''
             ],
-        ],
-        'highscore' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:myfirstgame/Resources/Private/Language/locallang_db.xlf:tx_myfirstgame_domain_model_highscore.highscore',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_myfirstgame_domain_model_playeer',
-                'default' => 0,
-                'minitems' => 0,
-                'maxitems' => 1,
-            ],
-
         ],
     
     ],
