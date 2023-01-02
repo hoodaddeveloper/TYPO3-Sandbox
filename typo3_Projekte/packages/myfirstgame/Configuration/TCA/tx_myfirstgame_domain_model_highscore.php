@@ -99,24 +99,11 @@ return [
             'label' => 'LLL:EXT:myfirstgame/Resources/Private/Language/locallang_db.xlf:tx_myfirstgame_domain_model_highscore.player',
             'config' => [
                 'type' => 'select',
-                'renderType' => 'selectMultipleSideBySide',
+                'renderType' => 'selectSingle',
                 'foreign_table' => 'tx_myfirstgame_domain_model_player',
                 'default' => 0,
-                'size' => 10,
-                'autoSizeMax' => 30,
+                'minitems' => 0,
                 'maxitems' => 1,
-                'multiple' => 0,
-                'fieldControl' => [
-                    'editPopup' => [
-                        'disabled' => false,
-                    ],
-                    'addRecord' => [
-                        'disabled' => false,
-                    ],
-                    'listModule' => [
-                        'disabled' => true,
-                    ],
-                ],
             ],
             
         ],
