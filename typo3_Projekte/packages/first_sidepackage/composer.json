@@ -1,0 +1,21 @@
+{
+    "name": "ews/my-first-sidepackage",
+    "type": "typo3-cms-extension",
+    "description": "This is a test.",
+    "homepage": "https://test.com",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "bk2k/bootstrap-package": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ews\\MyFirstSidepackage\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "my_first_sidepackage"
+        }
+    }
+}
