@@ -952,7 +952,7 @@
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "packages/my-first-sidepackage",
+                "url": "packages/my-first_sidepackage",
                 "reference": "f4aa081cb2035fdcb36dac8010fb2cf78b6b7e65"
             },
             "require": {
