@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96c8fdb862f18b0321d757410700b8f4",
+    "content-hash": "a8ee129902de9107aef2d26c5d01c38a",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -946,6 +946,40 @@
                 "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.15.4"
             },
             "time": "2022-02-21T09:13:59+00:00"
+        },
+        {
+            "name": "ews/my-first-sidepackage",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/my-first-sidepackage",
+                "reference": "f4aa081cb2035fdcb36dac8010fb2cf78b6b7e65"
+            },
+            "require": {
+                "bk2k/bootstrap-package": "^13.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "my_first_sidepackage"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ews\\MyFirstSidepackage\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "This is a test.",
+            "homepage": "https://test.com",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "friendsoftypo3/extension-builder",
@@ -7450,6 +7484,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "ews/my-first-sidepackage": 20,
         "hoodad/myfirstgame": 20,
         "hoodad/test-package": 20
     },
