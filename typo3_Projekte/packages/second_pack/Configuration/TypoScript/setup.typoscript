@@ -144,7 +144,7 @@ page {
     }
 
     includeCSS {
-        second_pack_layout = EXT:second_pack/Resources/Public/Css/layout.min.css
+        bootstrap5 = EXT:second_pack/Resources/Public/Css/bootstrap.min.css
     }
 
     includeJSLibs {
