@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a8ee129902de9107aef2d26c5d01c38a",
+    "content-hash": "ec3f12940973d3d1895bc69e656f0102",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -7422,6 +7422,42 @@
             "time": "2022-07-28T11:24:11+00:00"
         },
         {
+            "name": "umbrella/second-pack",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/second_pack",
+                "reference": "6a05069a64121259909de791a0baeb445e22aaa7"
+            },
+            "require": {
+                "typo3/cms-core": "^11.5",
+                "typo3/cms-fluid-styled-content": "^11.5",
+                "typo3/cms-rte-ckeditor": "^11.5"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "second_pack"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Umbrella\\SecondPack\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "This is  my second package",
+            "homepage": "https://umbrella.com",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.11.0",
             "source": {
@@ -7486,7 +7522,8 @@
     "stability-flags": {
         "ews/my-first-sidepackage": 20,
         "hoodad/myfirstgame": 20,
-        "hoodad/test-package": 20
+        "hoodad/test-package": 20,
+        "umbrella/second-pack": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
