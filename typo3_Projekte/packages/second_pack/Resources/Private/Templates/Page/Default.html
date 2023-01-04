@@ -1,19 +1,11 @@
 <f:layout name="Default" />
 <f:section name="Main">
-
-    <div style="background-color: yellow; padding: 0.5em 1em;">
-        <dl>
-            <dt>Template file</dt>
-            <dd>
-                <code>typo3conf/ext/second_pack/Resources/Private/Templates/Page/Default.html</code>
-            </dd>
-            <dt>Backend Configuration</dt>
-            <dd>
-                <code>typo3conf/ext/second_pack/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts/default.tsconfig</code>
-            </dd>
-        </dl>
+    <div class="container">
+        <h3>My first content element</h3>
+        <h4>I'm so proud</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto eius quasi optio, maiores officiis asperiores
+            exercitationem hic rerum eveniet doloribus. Debitis saepe eum perspiciatis inventore modi repellendus vel
+            aperiam atque.</p>
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
     </div>
-
-    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
-
 </f:section>
