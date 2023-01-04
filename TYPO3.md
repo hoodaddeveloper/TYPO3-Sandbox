@@ -47,10 +47,13 @@
 <!-- Administration -->
 + Neuen Backend benutzer erstellen
 + Adminrechte bestimmen & einschränken
++ Einen neuen Domain erstellen
 <!-- Extensions -->
 + Extensions mit dem "ddev composer" installieren
 + Bootstrap Klassen für die Texte benutzen
-+ Template erstellen und einrichten 
++ Template erstellen und einrichten
++ Sitepackage erstellen
++ Eigene Extensions manuell erstellen und installieren
 + News-Extension installieren & das News System benutzen
 + Eigene Basisextension mit der Extension Builder erstellen
-+ Eigenes Inhaltselement als Frontend Plugin erstellen
++ Eigenes Inhaltselement als Front-end Plugin erstellen
