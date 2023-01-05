@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec3f12940973d3d1895bc69e656f0102",
+    "content-hash": "95afea83ff9c97ec7c7aa97a1155d1a4",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1637,6 +1637,42 @@
                 }
             ],
             "time": "2022-12-20T16:16:38+00:00"
+        },
+        {
+            "name": "hoodad/bs-package",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/bs_package",
+                "reference": "7e2c419bbb0f4198ef23deacfac17c4c1d06c5db"
+            },
+            "require": {
+                "typo3/cms-core": "^11.5",
+                "typo3/cms-fluid-styled-content": "^11.5",
+                "typo3/cms-rte-ckeditor": "^11.5"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "bs_package"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hoodad\\BsPackage\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Cloning a bootstrap template",
+            "homepage": "https://hoodad.com",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "hoodad/myfirstgame",
@@ -7521,6 +7557,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "ews/my-first-sidepackage": 20,
+        "hoodad/bs-package": 20,
         "hoodad/myfirstgame": 20,
         "hoodad/test-package": 20,
         "umbrella/second-pack": 20
