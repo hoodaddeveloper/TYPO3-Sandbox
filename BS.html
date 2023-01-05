@@ -12,9 +12,10 @@
 </head>
 
 <body class="bg-dark">
-  <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+  <!-- Top navbar -->
+  <div class="navbar navbar-expand-lg fixed-top navbar-dark py-3 mb-5" style="background: #375a7f">
     <div class="container">
-      <a href="../" class="navbar-brand">Bootswatch</a>
+      <a class="navbar-brand">Bootswatch</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -90,28 +91,32 @@
       </div>
     </div>
   </div>
+  <br>
+  <br>
+  <br>
 
-  <div class="container">
-    <div class="page-header" id="banner">
-      <div class="row">
-        <div class="col-lg-8 col-md-7 col-sm-6">
-          <h1>Darkly</h1>
-          <p class="lead">Flatly in night mode</p>
+  <!-- Banner text -->
+  <div class="container text-light my-5">
+    <div class="page-header">
+      <div class="row my-5">
+        <div class="lead col-lg-8 col-md-7 col-sm-6">
+          <h1 class="h1">Darkly</h1>
+          <p>Flatly in night mode</p>
         </div>
       </div>
     </div>
 
-    <!-- Navbar
+    <!-- Navbars
         ================================================== -->
     <div class="bs-docs-section clearfix">
       <div class="row">
         <div class="col-lg-12">
-          <div class="page-header">
-            <h1 id="navbars">Navbars</h1>
+          <div class="page-header my-5">
+            <h1>Navbars</h1>
           </div>
 
-          <div class="bs-component">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <div class="bs-component py-2">
+            <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background: #375a7f">
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
@@ -149,15 +154,15 @@
                   </ul>
                   <form class="d-flex">
                     <input class="form-control me-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn text-light my-2 my-sm-0" style="background: #444" type="submit">Search</button>
                   </form>
                 </div>
               </div>
             </nav>
           </div>
 
-          <div class="bs-component">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="bs-component py-2">
+            <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background: #303030">
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
@@ -195,15 +200,15 @@
                   </ul>
                   <form class="d-flex">
                     <input class="form-control me-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn my-2 text-light my-sm-0" style="background: #444" type="submit">Search</button>
                   </form>
                 </div>
               </div>
             </nav>
           </div>
 
-          <div class="bs-component">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="bs-component py-2">
+            <nav class="navbar navbar-expand-lg navbar-light py-3" style="background: #adb5bd">
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
@@ -241,7 +246,7 @@
                   </ul>
                   <form class="d-flex">
                     <input class="form-control me-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn my-2 my-sm-0 text-light" style="background: #444" type="submit">Search</button>
                   </form>
                 </div>
               </div>
@@ -254,11 +259,11 @@
 
     <!-- Buttons
         ================================================== -->
-    <div class="bs-docs-section">
+    <div class="bs-docs-section my-5">
       <div class="page-header">
         <div class="row">
           <div class="col-lg-12">
-            <h1 id="buttons">Buttons</h1>
+            <h1 class="mb-5">Buttons</h1>
           </div>
         </div>
       </div>
@@ -269,28 +274,30 @@
             <button type="button" class="btn text-light" style="background: #375a7f">Primary</button>
             <button type="button" class="btn btn-secondary">Secondary</button>
             <button type="button" class="btn btn-success">Success</button>
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-info text-light" style="background: #3498db">Info</button>
+            <button type="button" class="btn btn-warning text-light">Warning</button>
+            <button type="button" class="btn btn-danger text-light">Danger</button>
             <button type="button" class="btn btn-light">Light</button>
             <button type="button" class="btn btn-dark">Dark</button>
-            <button type="button" class="btn btn-link">Link</button>
+            <br>
+            <button type="button" class="btn btn-link" style="color: rgb(4, 178, 4)">Link</button>
           </p>
 
           <p class="bs-component">
             <button type="button" class="btn text-light disabled" style="background: #375a7f">Primary</button>
             <button type="button" class="btn btn-secondary disabled">Secondary</button>
             <button type="button" class="btn btn-success disabled">Success</button>
-            <button type="button" class="btn btn-info disabled">Info</button>
-            <button type="button" class="btn btn-warning disabled">Warning</button>
-            <button type="button" class="btn btn-danger disabled">Danger</button>
+            <button type="button" class="btn btn-info disabled text-light" style="background: #3498db">Info</button>
+            <button type="button" class="btn btn-warning disabled text-light">Warning</button>
+            <button type="button" class="btn btn-danger disabled text-light">Danger</button>
             <button type="button" class="btn btn-light disabled">Light</button>
             <button type="button" class="btn btn-dark disabled">Dark</button>
+            <br>
             <button type="button" class="btn btn-link disabled">Link</button>
           </p>
 
           <p class="bs-component">
-            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-primary" style="color: #375a7f">Primary</button>
             <button type="button" class="btn btn-outline-secondary">Secondary</button>
             <button type="button" class="btn btn-outline-success">Success</button>
             <button type="button" class="btn btn-outline-info">Info</button>
@@ -300,11 +307,11 @@
             <button type="button" class="btn btn-outline-dark">Dark</button>
           </p>
 
-          <div class="bs-component">
+          <div class="bs-component mb-3">
             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn text-light" style="background: #375a7f">Primary</button>
               <div class="btn-group" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle"
+                <button id="btnGroupDrop1" type="button" class="btn text-light dropdown-toggle" style="background: #375a7f"
                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                 <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                   <a class="dropdown-item" href="#">Dropdown link</a>
@@ -326,9 +333,9 @@
             </div>
 
             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-              <button type="button" class="btn btn-info">Info</button>
+              <button type="button" class="btn btn-info text-light" style="background: #3498db">Info</button>
               <div class="btn-group" role="group">
-                <button id="btnGroupDrop3" type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
+                <button id="btnGroupDrop3" type="button" class="btn btn-info dropdown-toggle text-light" style="background: #3498db" data-bs-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false"></button>
                 <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
                   <a class="dropdown-item" href="#">Dropdown link</a>
@@ -351,14 +358,14 @@
           </div>
 
           <div class="bs-component">
-            <button type="button" class="btn btn-primary btn-lg">Large button</button>
-            <button type="button" class="btn btn-primary">Default button</button>
-            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            <button type="button" class="btn btn-lg text-light" style="background: #375a7f">Large button</button>
+            <button type="button" class="btn btn-primary" style="background: #375a7f">Default button</button>
+            <button type="button" class="btn btn-primary btn-sm" style="background: #375a7f">Small button</button>
           </div>
         </div>
         <div class="col-lg-5">
           <div class="bs-component">
-            <div class="d-grid gap-2">
+            <div class="d-grid gap-2 mb-3">
               <button class="btn btn-lg btn-primary" type="button">Block button</button>
               <button class="btn btn-lg btn-primary" type="button">Block button</button>
             </div>
@@ -386,7 +393,7 @@
             </div>
           </div>
 
-          <div class="bs-component">
+          <div class="bs-component mb-3">
             <div class="btn-group-vertical">
               <button type="button" class="btn btn-primary">Button</button>
               <button type="button" class="btn btn-primary">Button</button>
@@ -433,7 +440,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="page-header">
-            <h1 id="typography">Typography</h1>
+            <h1 class="mb-5">Typography</h1>
           </div>
         </div>
       </div>
@@ -459,7 +466,8 @@
         <div class="col-lg-4">
           <div class="bs-component">
             <h2>Example body text</h2>
-            <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et
+            <p>Nullam quis risus eget <a class="text-success" href="#">urna mollis ornare</a> vel eu leo. Cum sociis
+              natoque penatibus et
               magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
             <p><small>This line of text is meant to be treated as fine print.</small></p>
             <p>The following is <strong>rendered as bold text</strong>.</p>
@@ -536,7 +544,7 @@
 
     <!-- Tables
         ================================================== -->
-    <div class="bs-docs-section">
+    <div class="bs-docs-section mt-5">
       <div class="row">
         <div class="col-lg-12">
           <div class="page-header">
@@ -616,18 +624,18 @@
                 </tr>
               </tbody>
             </table>
-          </div><!-- /example -->
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Forms
         ================================================== -->
-    <div class="bs-docs-section">
+    <div class="bs-docs-section my-5">
       <div class="row">
         <div class="col-lg-12">
           <div class="page-header">
-            <h1 id="forms">Forms</h1>
+            <h1 class="mt-4 mb-5">Forms</h1>
           </div>
         </div>
       </div>
