@@ -144,7 +144,8 @@ page {
     }
 
     includeCSS {
-        bs_package_layout = EXT:bs_package/Resources/Public/Css/layout.min.css
+        bootstrap_layout = EXT:bs_package/Resources/Public/Css/custom.min.css
+        bootstrap_layout = EXT:bs_package/Resources/Public/Css/bootstrap.css
     }
 
     includeJSLibs {
