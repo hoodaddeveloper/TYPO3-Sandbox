@@ -11,7 +11,7 @@
   <title>Bootstrap Content Page</title>
 </head>
 
-<body class="bg-dark">
+<body style="background: #222">
   <!-- Top navbar -->
   <div class="navbar navbar-expand-lg fixed-top navbar-dark py-3 mb-5" style="background: #375a7f">
     <div class="container">
@@ -278,8 +278,7 @@
             <button type="button" class="btn btn-warning text-light">Warning</button>
             <button type="button" class="btn btn-danger text-light">Danger</button>
             <button type="button" class="btn btn-light">Light</button>
-            <button type="button" class="btn btn-dark">Dark</button>
-            <br>
+            <button type="button" class="btn text-light" style="background: #303030">Dark</button>
             <button type="button" class="btn btn-link" style="color: rgb(4, 178, 4)">Link</button>
           </p>
 
@@ -291,8 +290,7 @@
             <button type="button" class="btn btn-warning disabled text-light">Warning</button>
             <button type="button" class="btn btn-danger disabled text-light">Danger</button>
             <button type="button" class="btn btn-light disabled">Light</button>
-            <button type="button" class="btn btn-dark disabled">Dark</button>
-            <br>
+            <button type="button" class="btn text-light" style="background: #303030" disabled">Dark</button>
             <button type="button" class="btn btn-link disabled">Link</button>
           </p>
 
@@ -385,11 +383,11 @@
           <div class="bs-component mb-3">
             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
               <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-              <label class="btn btn-outline-primary" style="color: #375a7f" for="btnradio1">Radio 1</label>
+              <label class="btn btn-outline-primary" style="color: #375a7f; border-color: #375a7f" for="btnradio1">Radio 1</label>
               <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked>
-              <label class="btn btn-outline-primary" style="color: #375a7f" for="btnradio2">Radio 2</label>
+              <label class="btn btn-outline-primary" style="color: #375a7f; border-color: #375a7f" for="btnradio2">Radio 2</label>
               <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked>
-              <label class="btn btn-outline-primary" style="background: #375a7f" for="btnradio3">Radio 3</label>
+              <label class="btn btn-outline-primary" style="background: #375a7f; border-color: #375a7f" for="btnradio3">Radio 3</label>
             </div>
           </div>
 
@@ -406,27 +404,27 @@
 
           <div class="bs-component mb-3">
             <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" style="background: #444444" class="btn btn-secondary">Left</button>
-              <button type="button" style="background: #444444" class="btn btn-secondary">Middle</button>
-              <button type="button" style="background: #444444" class="btn btn-secondary">Right</button>
+              <button type="button" style="background: #444444; border-color: #444444" class="btn btn-secondary">Left</button>
+              <button type="button" style="background: #444444; border-color: #444444" class="btn btn-secondary">Middle</button>
+              <button type="button" style="background: #444444; border-color: #444444" class="btn btn-secondary">Right</button>
             </div>
           </div>
 
           <div class="bs-component mb-3">
             <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
               <div class="btn-group me-2" role="group" aria-label="First group">
-                <button type="button" style="background: #444444" class="btn btn-secondary">2</button>
-                <button type="button" style="background: #444444" class="btn btn-secondary">1</button>
-                <button type="button" style="background: #444444" class="btn btn-secondary">3</button>
-                <button type="button" style="background: #444444" class="btn btn-secondary">4</button>
+                <button type="button" style="background: #444444; border-color: #444444" class="btn btn-secondary">2</button>
+                <button type="button" style="background: #444444; border-color: #444444" class="btn btn-secondary">1</button>
+                <button type="button" style="background: #444444; border-color: #444444" class="btn btn-secondary">3</button>
+                <button type="button" style="background: #444444; border-color: #444444" class="btn btn-secondary">4</button>
               </div>
               <div class="btn-group me-2" role="group" aria-label="Second group">
-                <button type="button" style="background: #444444" class="btn btn-secondary">5</button>
-                <button type="button" style="background: #444444" class="btn btn-secondary">6</button>
-                <button type="button" style="background: #444444" class="btn btn-secondary">7</button>
+                <button type="button" style="background: #444444; border-color: #444444" class="btn btn-secondary">5</button>
+                <button type="button" style="background: #444444; border-color: #444444" class="btn btn-secondary">6</button>
+                <button type="button" style="background: #444444; border-color: #444444" class="btn btn-secondary">7</button>
               </div>
               <div class="btn-group" role="group" aria-label="Third group">
-                <button type="button" style="background: #444444" class="btn btn-secondary">8</button>
+                <button type="button" style="background: #444444; border-color: #444444" class="btn btn-secondary">8</button>
               </div>
             </div>
           </div>
@@ -801,14 +799,14 @@
               <label class="form-label mt-4">Input addons</label>
               <div class="form-group">
                 <div class="input-group mb-3">
-                  <span class="input-group-text">$</span>
+                  <span style="background:#444444; border-color: #444444" class="text-light input-group-text">$</span>
                   <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                  <span class="input-group-text">.00</span>
+                  <span class="input-group-text text-light" style="background:#444444; border-color: #444444">.00</span>
                 </div>
                 <div class="input-group mb-3">
                   <input type="text" class="form-control" placeholder="Recipient's username"
                     aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <button class="btn btn-primary" type="button" id="button-addon2">Button</button>
+                  <button class="btn btn-primary" style="background:#375a7f; border-color: #375a7f" type="button" id="button-addon2">Button</button>
                 </div>
               </div>
             </div>
