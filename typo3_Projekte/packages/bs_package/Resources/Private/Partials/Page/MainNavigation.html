@@ -1,7 +1,7 @@
 <!-- Navigation -->
 <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
   <div class="container">
-    <a href="../" class="navbar-brand">Bootswatch</a>
+    <a href="/" class="navbar-brand">Bootswatch</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
       aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -14,7 +14,7 @@
           <f:if condition="{mainnavigationItem.children}">
             <!-- Use the f:then tag & put my dropdown inside it -->
             <f:then>
-              <li class="nav-item dropdown">
+              <li class="nav-item {f:if(condition: mainnavigationItem.active, then:'active')} dropdown">
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
                   id="themes">{mainnavigationItem.title}</a>
                 <div class="dropdown-menu" aria-labelledby="themes">
@@ -27,12 +27,13 @@
             </f:then>
             <!-- Use the f:else tag & put my other list items inside it -->
             <f:else>
-              <li class="nav-item">
+              <li class="nav-item {f:if(condition: mainnavigationItem.active, then:'active')}">
                 <a class="nav-link" href="{mainnavigationItem.link}">{mainnavigationItem.title}</a>
               </li>
             </f:else>
             <!-- Darkly dropdown -->
             <li class="nav-item dropdown">
+              <f:for each="{mainnavigationItem}" as="child"></f:for>
               <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="download">Darkly</a>
               <div class="dropdown-menu" aria-labelledby="download">
                 <a class="dropdown-item" rel="noopener" target="_blank"
