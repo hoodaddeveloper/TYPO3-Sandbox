@@ -11,7 +11,7 @@
         <!-- Use for each & put all of my list items inside the f:for tag -->
         <f:for each="{mainnavigation}" as="mainnavigationItem">
           <!-- Use f:if tag & put f:then & f:else inside it -->
-          <f:if condition="{mainnavigation.children}">
+          <f:if condition="{mainnavigationItem.children}">
             <!-- Use the f:then tag & put my dropdown inside it -->
             <f:then>
               <li class="nav-item dropdown">
@@ -19,17 +19,6 @@
                   id="themes">{mainnavigationItem.title}</a>
                 <div class="dropdown-menu" aria-labelledby="themes">
                   <!-- For each for children -->
-                  <f:for each="{mainnavigationItem.children}" as="child">
-                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
-                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
-                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
-                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
-                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
-                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
-                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
-                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
-                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
-                  </f:for>
                 </div>
               </li>
             </f:then>
@@ -38,13 +27,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="{mainnavigationItem.link}">{mainnavigationItem.title}</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{mainnavigationItem.link}">{mainnavigationItem.title}</a>
-              </li>
             </f:else>
           </f:if>
           <!-- Use f:if tag again & put second f:then & f:else inside it -->
-          <f:if condition="{mainnavigation.children}">
+          <f:if condition="{mainnavigationItem.children}">
             <!-- Use the f:then tag again & put my next dropdown inside it -->
             <f:then>
               <li class="nav-item dropdown">
