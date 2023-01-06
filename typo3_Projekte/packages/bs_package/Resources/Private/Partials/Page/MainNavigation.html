@@ -15,7 +15,7 @@
             <!-- Use the f:then tag & put my dropdown inside it -->
             <f:then>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="themes">Themes</a>
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="themes">{mainnavigationItem.title}</a>
                 <div class="dropdown-menu" aria-labelledby="themes">
                   <a class="dropdown-item" href="../default/">Default</a>
                   <div class="dropdown-divider"></div>
@@ -33,10 +33,10 @@
             <!-- Use the f:else tag & put my other list items inside it -->
             <f:else>
               <li class="nav-item">
-                <a class="nav-link" href="../help/">Help</a>
+                <a class="nav-link" href="{mainnavigationItem.link}">{mainnavigationItem.title}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://blog.bootswatch.com/">Blog</a>
+                <a class="nav-link" href="{mainnavigationItem.link}">{mainnavigationItem.title}</a>
               </li>
             </f:else>
           </f:if>
