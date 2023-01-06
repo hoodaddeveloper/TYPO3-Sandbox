@@ -10,24 +10,31 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
-                <!-- For each -->
+                <!-- Use for each & put all of my list items inside the f:for tag -->
                 <f:for each="{mainnavigation}" as="mainnavigationItem">
-                    <!-- Put all of my list items inside the f:for tag -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="themes">Themes</a>
-                        <div class="dropdown-menu" aria-labelledby="themes">
-                            <a class="dropdown-item" href="../default/">Default</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="../yeti/">Yeti</a>
-                            <a class="dropdown-item" href="../vapor/">Vapor</a>
-                            <a class="dropdown-item" href="../united/">United</a>
-                            <a class="dropdown-item" href="../litera/">Litera</a>
-                            <a class="dropdown-item" href="../journal/">Journal</a>
-                            <a class="dropdown-item" href="../darkly/">Darkly</a>
-                            <a class="dropdown-item" href="../cosmo/">Cosmo</a>
-                            <a class="dropdown-item" href="../cyborg/">Cyborg</a>
-                        </div>
-                    </li>
+                    <!-- Use f:if tag & put f:then & f:else inside it -->
+                    <f:if condition="{mainnavigation.children}">
+                        <!-- Use the f:then tag & put my dropdown inside it -->
+                        <f:then>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                    id="themes">Themes</a>
+                                <div class="dropdown-menu" aria-labelledby="themes">
+                                    <a class="dropdown-item" href="../default/">Default</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="../yeti/">Yeti</a>
+                                    <a class="dropdown-item" href="../vapor/">Vapor</a>
+                                    <a class="dropdown-item" href="../united/">United</a>
+                                    <a class="dropdown-item" href="../litera/">Litera</a>
+                                    <a class="dropdown-item" href="../journal/">Journal</a>
+                                    <a class="dropdown-item" href="../darkly/">Darkly</a>
+                                    <a class="dropdown-item" href="../cosmo/">Cosmo</a>
+                                    <a class="dropdown-item" href="../cyborg/">Cyborg</a>
+                                </div>
+                            </li>
+                        </f:then>
+                        <f:else></f:else>
+                    </f:if>
                     <li class="nav-item">
                         <a class="nav-link" href="../help/">Help</a>
                     </li>
