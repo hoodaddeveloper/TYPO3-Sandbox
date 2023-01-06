@@ -20,16 +20,15 @@
                 <div class="dropdown-menu" aria-labelledby="themes">
                   <!-- For each for children -->
                   <f:for each="{mainnavigationItem.children}" as="child">
-                    <a class="dropdown-item" href="../default/">Default</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="../yeti/">Yeti</a>
-                    <a class="dropdown-item" href="../vapor/">Vapor</a>
-                    <a class="dropdown-item" href="../united/">United</a>
-                    <a class="dropdown-item" href="../litera/">Litera</a>
-                    <a class="dropdown-item" href="../journal/">Journal</a>
-                    <a class="dropdown-item" href="../darkly/">Darkly</a>
-                    <a class="dropdown-item" href="../cosmo/">Cosmo</a>
-                    <a class="dropdown-item" href="../cyborg/">Cyborg</a>
+                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
+                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
+                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
+                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
+                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
+                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
+                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
+                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
+                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
                   </f:for>
                 </div>
               </li>
