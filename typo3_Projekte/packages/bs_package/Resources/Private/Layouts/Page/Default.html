@@ -18,4 +18,9 @@
         </li>
     </f:for>
 </ul>
-<f:render section="Main" />
+
+<f:render partial="MainNavigation" arguments="{_all}" />
+
+<f:render section="Main" arguments="{_all}" />
+
+<f:render partial="Footer" arguments="{_all}" />
