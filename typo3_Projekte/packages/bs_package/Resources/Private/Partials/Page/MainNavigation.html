@@ -6,6 +6,7 @@
       aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav">
         <!-- Use for each & put all of my list items inside the f:for tag -->
@@ -19,8 +20,8 @@
                   id="themes">{mainnavigationItem.title}</a>
                 <div class="dropdown-menu" aria-labelledby="themes">
                   <!-- For each for child -->
-                  <f:for each="{mainnavigationItem}" as="child">
-                    <a class="dropdown-item" href="{child.link}">child.title}</a>
+                  <f:for each="{mainnavigationItem.children}" as="child">
+                    <a class="dropdown-item" href="{child.link}">{child.title}</a>
                   </f:for>
                 </div>
               </li>
@@ -33,7 +34,6 @@
             </f:else>
             <!-- Darkly dropdown -->
             <li class="nav-item dropdown">
-              <f:for each="{mainnavigationItem}" as="child"></f:for>
               <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="download">Darkly</a>
               <div class="dropdown-menu" aria-labelledby="download">
                 <a class="dropdown-item" rel="noopener" target="_blank"
