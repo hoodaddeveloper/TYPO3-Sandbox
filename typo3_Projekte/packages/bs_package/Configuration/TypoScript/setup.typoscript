@@ -140,11 +140,11 @@ page {
     }
 
     includeCSSLibs {
-        bootstrap = EXT:bs_package/Resources/Public/Css/bootstrap.css
     }
 
     includeCSS {
         css = EXT:bs_package/Resources/Public/Css/custom.min.css
+        bootstrap = EXT:bs_package/Resources/Public/Css/bootstrap.css
     }
 
     includeJSLibs {
@@ -156,7 +156,9 @@ page {
     }
 
     includeJSFooterlibs {
-
+        JS1 = EXT:bs_package/Resources/Public/JavaScript/dist/bootstrap.bundle.min.js
+        JS2 = EXT:bs_package/Resources/Public/JavaScript//prism.js
+        JS3 = EXT:bs_package/Resources/Public/JavaScript//custom.js
     }
 
     includeJSFooter {
