@@ -140,13 +140,11 @@ page {
     }
 
     includeCSSLibs {
-
+        bootstrap = EXT:bs_package/Resources/Public/Css/bootstrap.css
     }
 
     includeCSS {
-        bootstrap = EXT:bs_package/Resources/Public/Css/bootstrap.css
         css = EXT:bs_package/Resources/Public/Css/custom.min.css
-        
     }
 
     includeJSLibs {
