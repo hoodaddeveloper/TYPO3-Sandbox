@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95afea83ff9c97ec7c7aa97a1155d1a4",
+    "content-hash": "c4894cb5af521300118b7ce49f81b00c",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1670,59 +1670,6 @@
             "keywords": [
                 "TYPO3 CMS"
             ],
-            "transport-options": {
-                "relative": true
-            }
-        },
-        {
-            "name": "hoodad/myfirstgame",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "packages/myfirstgame",
-                "reference": "89879545e0e64ff3f8db0e2de47620b7e5ca3bf1"
-            },
-            "require": {
-                "typo3/cms-core": "^11.5"
-            },
-            "replace": {
-                "typo3-ter/myfirstgame": "self.version"
-            },
-            "require-dev": {
-                "typo3/testing-framework": "^6.9.0"
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "web-dir": ".Build/public",
-                    "extension-key": "myfirstgame"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Hoodad\\Myfirstgame\\": "Classes"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Hoodad\\Myfirstgame\\Tests\\": "Tests"
-                }
-            },
-            "scripts": {
-                "post-autoload-dump": [
-                    "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
-                ]
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "hoodad",
-                    "role": "Developer"
-                }
-            ],
-            "description": "This is a game",
             "transport-options": {
                 "relative": true
             }
@@ -7558,7 +7505,6 @@
     "stability-flags": {
         "ews/my-first-sidepackage": 20,
         "hoodad/bs-package": 20,
-        "hoodad/myfirstgame": 20,
         "hoodad/test-package": 20,
         "umbrella/second-pack": 20
     },
