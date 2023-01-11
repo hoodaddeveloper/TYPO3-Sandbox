@@ -37,6 +37,11 @@ return [
             'disablePageTsTCEFORM' => '0',
             'disablePageTsTCEMAIN' => '0',
         ],
+        'bw_icons' => [
+            'pages' => '0',
+            'sys_category' => '0',
+            'tt_content' => '0',
+        ],
         'extension_builder' => [
             'backupDir' => 'var/tx_extensionbuilder/backups',
             'backupExtension' => '1',
