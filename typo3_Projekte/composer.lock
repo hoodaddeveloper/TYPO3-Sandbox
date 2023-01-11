@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "942b4dc52fcc35874796308ae7d590ba",
+    "content-hash": "0485027672b2dd12b9ba95c4285663b0",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1867,6 +1867,38 @@
             "time": "2022-08-18T16:18:26+00:00"
         },
         {
+            "name": "netzmacher/bootstrapicons",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.die-netzmacher.de/typo3/bootstrapicons",
+                "reference": "ccdc0cd15618825d2c71d79486f71a445f1ec096"
+            },
+            "require": {
+                "typo3/cms-core": ">=10.0.0 <12.0.0"
+            },
+            "replace": {
+                "typo3-ter/bootstrapicons": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "bootstrapicons"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Netzmacher\\Bootstrapicons\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Bootstrapicons! Frontend editing by frontend users.",
+            "time": "2021-11-09T20:11:14+00:00"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v4.15.2",
             "source": {
@@ -2778,6 +2810,58 @@
                 "source": "https://github.com/scssphp/scssphp/tree/v1.11.0"
             },
             "time": "2022-09-02T21:24:55+00:00"
+        },
+        {
+            "name": "simonkoehler/faicon",
+            "version": "1.3.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/faicon",
+                "reference": "0a245309f7b63a733d8d121e7ef0d149b8152bf0"
+            },
+            "require": {
+                "typo3/cms-core": "^10.4.0 || ^11.5"
+            },
+            "replace": {
+                "simonkoehler/faicon": "self.version",
+                "typo3-ter/faicon": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Köhler",
+                    "email": "info@simon-koehler.com",
+                    "homepage": "https://simon-koehler.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides Font Awesome Icons for the TYPO3 page settings in the backend, and Icons for the Bootstrap Package in the frontend.",
+            "homepage": "https://simon-koehler.com/",
+            "keywords": [
+                "TYPO3",
+                "addon",
+                "css",
+                "extension",
+                "fontawesome",
+                "frontend",
+                "icons"
+            ],
+            "support": {
+                "email": "info@simon-koehler.com",
+                "docs": "https://simon-koehler.com/"
+            },
+            "funding": [
+                {
+                    "type": "paypal",
+                    "url": "https://paypal.me/typo3freelancer/25"
+                }
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "symfony/cache",
