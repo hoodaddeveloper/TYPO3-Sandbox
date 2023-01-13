@@ -1,0 +1,17 @@
+///// Hier notiere ich meine TypoScript Codes für die zukünft /////
+
+text1 = TEXT
+text1 {
+  value = {$meinText}
+  wrap = <h1>|</h1>
+  typolink.parameter = 9
+}
+
+page = PAGE
+
+page.10 < text1
+
+# Conditions
+[treeLevel = 3]
+page.20 < text2
+[global]
