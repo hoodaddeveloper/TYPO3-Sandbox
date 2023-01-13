@@ -1,5 +1,7 @@
 ///// Hier notiere ich meine TypoScript Codes für die zukünft /////
 
+/// Setup page ///
+
 text1 = TEXT
 text1 {
   value = {$meinText}
@@ -15,3 +17,8 @@ page.10 < text1
 [treeLevel = 3]
 page.20 < text2
 [global]
+
+/// Constants page ///
+
+# Mein Variabel
+meinText = This is my text.
