@@ -1,6 +1,6 @@
-///// Hier notiere ich meine TypoScript Codes für die zukünft /////
+##### Hier notiere ich meine TypoScript Codes für die zukünft #####
 
-/// Setup page ///
+### Setup page ###
 
 text1 = TEXT
 text1 {
@@ -18,7 +18,12 @@ page.10 < text1
 page.20 < text2
 [global]
 
-/// Constants page ///
+
+### Constants page ###
 
 # Mein Variabel
 meinText = This is my text.
+
+
+### To include a TypoScript file ###
+<INCLUDE_TYPOSCRIPT: source="FILE:bs_package/Configuration/TypoScript/setup.typoscript" /> # Beispiel
