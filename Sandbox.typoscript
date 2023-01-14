@@ -61,6 +61,13 @@ page.20.wrap = <h3><b>|</b></h3>
 
 ### Weitere Beispiele ###
 
+# Constants
+
+color.bg = black
+color.font = yellow
+
+# Page
+
 headline = TEXT
 headline.value = <h1>HELLO TYPO3</h1>
 
@@ -71,11 +78,11 @@ subtitle.value (
 
 page = PAGE
 page.5 = TEXT
-page.5.value = <nav style="height: 40px; background: black; color: yellow; padding: 20px 0 0 20px;"><big>NAVIGATION</big></nav>
+page.5.value = <nav style="height: 40px; background: {$color.bg}; color: yellow; padding: 20px 0 0 20px;"><big>NAVIGATION</big></nav>
 page.10 < headline
 page.20 < subtitle
 page.25 = TEXT
-page.25.value = <nav style="height: 140px; background: black; color: yellow; padding: 20px 0 0 20px;"><big>FOOTER</big></nav>
+page.25.value = <nav style="height: 140px; background: black; color: {$color.font}; padding: 20px 0 0 20px;"><big>FOOTER</big></nav>
 
 print = PAGE
 print {
