@@ -15,9 +15,10 @@ page.10 < text1
 
 # Conditions
 
-# [Bedingung == true]
+# [Bedingung1 == true && Bedingung2 = "string"]
 # Anweisung
 # [ELSE]
+# Alternative Anweisung
 # [END]
 
 [treeLevel = 3]
