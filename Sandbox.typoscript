@@ -14,6 +14,12 @@ page = PAGE
 page.10 < text1
 
 # Conditions
+
+# [Bedingung == true]
+# Anweisung
+# [ELSE]
+# [END]
+
 [treeLevel = 3]
 page.20 < text2
 [global]
