@@ -27,3 +27,27 @@ meinText = This is my text.
 
 ### To include a TypoScript file ###
 <INCLUDE_TYPOSCRIPT: source="FILE:bs_package/Configuration/TypoScript/setup.typoscript" /> # Beispiel
+
+
+### Weitere Beispiele ###
+
+page = PAGE
+headline = TEXT
+headline.value = HEADLINE
+headline.wrap = <h1>|</h1>
+
+subtitle = TEXT
+subtitle.value = HEADLINE
+subtitle.wrap = <h1>|</h1>
+
+page = PAGE
+page.10 < headline
+page.20 < subtitle
+
+page.10 = TEXT
+page.10.value = HELLO WORLD
+page.10.wrap = <h1><i>|</i></h1>
+
+page.20 = TEXT
+page.20.value = HELLO WORLD
+page.20.wrap = <h3><b>|</b></h3>
