@@ -91,3 +91,22 @@ print {
   page.40 < headline
   page.50 < subtitle
 }
+
+########## ########## ########## ########## ##########
+
+headline = TEXT
+headline.value = <h1>HELLO TYPO3</h1>
+
+subtitle = TEXT
+subtitle.value (
+<h2>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</h2>
+)
+
+template = FLUIDTEMPLATE
+template (
+  templateName = SingleColumn
+  templateRootPaths.1 = fileadmin/system/template
+)
+
+page = PAGE
+page.5 < template
