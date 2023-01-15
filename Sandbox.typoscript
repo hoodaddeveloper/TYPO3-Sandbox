@@ -82,7 +82,7 @@ page.5.value = <nav style="height: 40px; background: {$color.bg}; color: yellow;
 page.10 < headline
 page.20 < subtitle
 page.25 = TEXT
-page.25.value = <nav style="height: 140px; background: black; color: {$color.font}; padding: 20px 0 0 20px;"><big>FOOTER</big></nav>
+page.25.value = <footer style="height: 140px; background: black; color: {$color.font}; padding: 20px 0 0 20px;"><big>FOOTER</big></footer>
 
 print = PAGE
 print {
