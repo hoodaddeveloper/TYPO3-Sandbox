@@ -110,3 +110,14 @@ template (
 
 page = PAGE
 page.5 < template
+
+## inside fileadmin/system/template/SingleColumn.html ##
+
+<nav style="height: 40px; background: black; color: yellow; padding: 20px 0 0 20px;"><big>NAVIGATION</big></nav>
+
+<div>
+   <h1 id="content">{headline}</h1>
+  <f:cObject typoscriptObjectPath="subtitle"></f:cObject>
+</div>
+
+<footer style="height: 140px; background: black; color: yellow; padding: 20px 0 0 20px;"><big>FOOTER</big></footer>
