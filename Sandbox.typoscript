@@ -92,7 +92,7 @@ print {
   page.50 < subtitle
 }
 
-########## ########## ########## ########## ##########
+## ######## ########## ########## ########## ######## ##
 
 headline = TEXT
 headline.value = <h1>HELLO TYPO3</h1>
@@ -115,9 +115,12 @@ page.5 < template
 
 <nav style="height: 40px; background: black; color: yellow; padding: 20px 0 0 20px;"><big>NAVIGATION</big></nav>
 
-<div>
-   <h1 id="content">{headline}</h1>
-  <f:cObject typoscriptObjectPath="subtitle"></f:cObject>
+<div id="content">
+   <h1>{headline}</h1>
+
+  # View Helper
+  <f:cObject typoscriptObjectPath="subtitle" />
+  {f:cObject typoscriptObjectPath="subtitle"}
 </div>
 
 <footer style="height: 140px; background: black; color: yellow; padding: 20px 0 0 20px;"><big>FOOTER</big></footer>
