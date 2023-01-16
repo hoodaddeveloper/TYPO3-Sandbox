@@ -146,9 +146,7 @@ page.5 < template
 <f:section>
 
 <div id="content">
-   <h1>{headline}</h1>
-
-  # ViewHelper
+  <f:render partial="Headline" arguments="{headline: headline}"></f:render>
   <f:cObject typoscriptObjectPath="subtitle" />
   {f:cObject(typoscriptObjectPath: "subtitle")}
 </div>
@@ -159,7 +157,9 @@ page.5 < template
 ## inside fileadmin/system/layout/Default.html ##
 
 <nav style="height: 40px; background: black; color: yellow; padding: 20px 0 0 20px;"><big>NAVIGATION</big></nav>
-
 <f:render section="content"></f:render>
-
 <footer style="height: 140px; background: black; color: yellow; padding: 20px 0 0 20px;"><big>FOOTER</big></footer>
+
+## inside fileadmin/system/layout/Headline.html ##
+
+<h1>{headline}</h1>
