@@ -111,6 +111,30 @@ template (
 page = PAGE
 page.5 < template
 
+## ######## ########## ########## ########## ######## ##
+
+# Page
+
+headline = TEXT
+headline.value = HELLO TYPO3
+
+subtitle = TEXT
+subtitle.value (
+<h2>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</h2>
+)
+
+template = FLUIDTEMPLATE
+template {
+  templateName = SingleColumn
+  templateRootPaths.1 = fileadmin/system/template
+  variables {
+  	headline < headline
+  }
+}
+
+page = PAGE
+page.5 < template
+
 ## inside fileadmin/system/template/SingleColumn.html ##
 
 <nav style="height: 40px; background: black; color: yellow; padding: 20px 0 0 20px;"><big>NAVIGATION</big></nav>
@@ -118,9 +142,9 @@ page.5 < template
 <div id="content">
    <h1>{headline}</h1>
 
-  # View Helper
+  # ViewHelper
   <f:cObject typoscriptObjectPath="subtitle" />
-  {f:cObject typoscriptObjectPath="subtitle"}
+  {f:cObject(typoscriptObjectPath: "subtitle")}
 </div>
 
 <footer style="height: 140px; background: black; color: yellow; padding: 20px 0 0 20px;"><big>FOOTER</big></footer>
