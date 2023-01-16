@@ -126,8 +126,12 @@ subtitle.value (
 template = FLUIDTEMPLATE
 template {
   templateName = SingleColumn
+  # template
   templateRootPaths.1 = fileadmin/system/template
+  # layout
   layoutRootPaths.1 = fileadmin/system/layout
+  # partials
+  partialRootPaths.1 = fileadmin/system/partial
   variables {
   	headline < headline
   }
