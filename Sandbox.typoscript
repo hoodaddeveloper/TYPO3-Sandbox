@@ -127,6 +127,7 @@ template = FLUIDTEMPLATE
 template {
   templateName = SingleColumn
   templateRootPaths.1 = fileadmin/system/template
+  layoutRootPaths.1 = fileadmin/system/layout
   variables {
   	headline < headline
   }
@@ -137,7 +138,8 @@ page.5 < template
 
 ## inside fileadmin/system/template/SingleColumn.html ##
 
-<nav style="height: 40px; background: black; color: yellow; padding: 20px 0 0 20px;"><big>NAVIGATION</big></nav>
+<f:layout name="Default" />
+<f:section>
 
 <div id="content">
    <h1>{headline}</h1>
@@ -146,5 +148,14 @@ page.5 < template
   <f:cObject typoscriptObjectPath="subtitle" />
   {f:cObject(typoscriptObjectPath: "subtitle")}
 </div>
+</f:section>
+
+<footer style="height: 140px; background: black; color: yellow; padding: 20px 0 0 20px;"><big>FOOTER</big></footer>
+
+## inside fileadmin/system/layout/Default.html ##
+
+<nav style="height: 40px; background: black; color: yellow; padding: 20px 0 0 20px;"><big>NAVIGATION</big></nav>
+
+<f:render section="content"></f:render>
 
 <footer style="height: 140px; background: black; color: yellow; padding: 20px 0 0 20px;"><big>FOOTER</big></footer>
